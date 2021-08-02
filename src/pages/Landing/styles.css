@@ -1,0 +1,189 @@
+.wrapper {
+ background-image: url(../../assets/icons/background_student.jpg);
+ height: 100vh;
+ position: absolute;
+ width: 100%;
+}
+
+
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-mid700);
+  background: var(--color-background);
+}
+
+.logo-container img {
+  width: 100%;
+  height: 6rem;
+  margin-top: 30%;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.logo-container {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+  margin-left: 7%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+  align-items: center;
+}
+.buttons-container a {
+  width: 20rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font: 700 2rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+}
+
+/* .buttons-container a span {
+  font-size: 1.2rem;
+} */
+
+.gitImg {
+  width: 4.5rem;
+  margin-left: -1rem;
+}
+
+.buttons-container a:first-child {
+  margin-right: 1.6rem;
+}
+.buttons-container a svg {
+  width: 4rem;
+}
+
+.buttons-container a.study {
+  background: var(--color-primary-blue600);
+}
+.buttons-container a.give-classes {
+  background: var(--color-secondary-green500);
+}
+.buttons-container a.study:hover {
+  background: var(--color-primary-dark900);
+}
+.buttons-container a.give-classes:hover {
+  background: var(--color-secondary-dark);
+}
+.buttons-container a svg {
+  margin-right: 1rem;
+}
+
+.total-connections {
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-connections img {
+  margin-left: 0.8rem;
+  width: 1.5rem;
+}
+
+@media (min-width: 1100px) {
+  #page-landing-content {
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      'logo hero hero'
+      'buttons buttons total';
+  }
+  .logo-container {
+    grid-area: logo;
+    align-self: center;
+    margin: 0;
+    text-align: left;
+  }
+  .logo-container h2 {
+    text-align: initial;
+    font-size: 2.6rem;
+  }
+  .logo-container img {
+    height: 100%;
+  }
+  .hero-image {
+    grid-area: hero;
+    justify-self: end;
+  }
+  .buttons-container {
+    grid-area: buttons;
+    justify-content: flex-start;
+  }
+  .buttons-container a {
+    font-size: 1.7rem;
+  }
+  .total-connections {
+    grid-area: total;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 1100px) {
+  #page-landing-content {
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      'logo hero hero'
+      'buttons buttons total';
+  }
+  .logo-container {
+    grid-area: logo;
+    align-self: center;
+    margin: 0;
+    text-align: left;
+  }
+  .logo-container h2 {
+    text-align: initial;
+    font-size: 1.5rem;
+  }
+  .logo-container img {
+    height: 100%;
+  }
+  .hero-image {
+    grid-area: hero;
+    justify-self: end;
+  }
+  .buttons-container {
+    grid-area: buttons;
+    justify-content: flex-start;
+  }
+  .buttons-container a {
+    font-size: 1.2rem;
+    width: 15rem;
+  }
+  .total-connections {
+    grid-area: total;
+    justify-self: end;
+  }
+}

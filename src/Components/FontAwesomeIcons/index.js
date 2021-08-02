@@ -1,0 +1,38 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faCheck,
+  faComment,
+  faHome,
+  faListUl,
+  faFilter,
+  faSearch,
+  faStar,
+  faUserShield,
+  faUserCircle,
+  faUser,
+  faEnvelope,
+  faLock,
+  faHeart,
+  faBookOpen,
+  faChalkboardTeacher,
+  faCartPlus,
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  faCheck,
+  faComment,
+  faHome,
+  faListUl,
+  faFilter,
+  faSearch,
+  faStar,
+  faUserShield,
+  faUserCircle,
+  faUser,
+  faEnvelope,
+  faLock,
+  faHeart,
+  faBookOpen,
+  faChalkboardTeacher,
+  faCartPlus,
+);
